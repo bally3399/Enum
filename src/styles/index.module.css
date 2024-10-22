@@ -1,0 +1,38 @@
+.navbar{
+    @apply px-[20px] h-[70px] w-full flex justify-between inset-0 m-auto bg-white
+}
+.navbarLogo{
+    @apply flex flex-row gap-2 h-[40px] justify-center items-center inset-0 my-auto
+}
+.navbarLogo :last-child{
+    @apply hidden md:flex h-[20px] justify-center items-center
+}
+.navbarList{
+    @apply hidden md:flex  gap-5 md:justify-center md:items-center h-full ;
+}
+
+.navbarList :hover {
+    @apply border-[2px] border-[#070707];
+}
+.navbarRightSide{
+    @apply flex justify-center items-center
+}
+.navbarRightSide section,  .navbarRightSide section div{
+    @apply flex
+}
+.currentNavbarList{
+    @apply text-[#008EEF] font-semibold justify-center items-center rounded-[20px] p-[4px_10px] bg-[#F6FCFF] my-[10px];
+}
+.navbarListDiv{
+    border-image: linear-gradient( to right, #008EEF, #008EEF , #008EEF) 0 0 1 0;
+    border-width: 1px;
+}
+.navbarHomePage :first-child p{
+    @apply text-[#52616B] font-semibold  justify-center items-center
+}
+.program{
+    @apply grid grid-cols-1 gap-1.5 md:grid-cols-3 gap-y-[40px] pl-36 justify-items-center;
+}
+.midNavbar{
+    @apply flex justify-center items-center rounded-full border-0
+}
