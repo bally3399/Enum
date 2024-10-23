@@ -1,6 +1,6 @@
 import Navbar from "@/component/navbar/Navbar";
 import {HiArrowLeft} from 'react-icons/hi';
-import MidNavbar from "@/component/mid-navbar/Mid-navbar";
+import MidNavbar from "@/component/mid-navbar/MidNavbar";
 import ProgramsPage from "@/pages/homePages/programsPage/index";
 
 const ProgramPage = () =>{

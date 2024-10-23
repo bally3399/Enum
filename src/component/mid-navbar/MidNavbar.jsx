@@ -1,6 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import styles from '../../styles/index.module.css'
 import { useState } from "react";
 
 
@@ -8,7 +7,7 @@ const MidNavbar = () => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div className={styles.midNavbar}>
+        <div>
             <div className="flex items-center justify-center w-full bg-white h-[50px] gap-x-[30px]">
                 <button
                     onClick={() => setOpen(!isOpen)}
