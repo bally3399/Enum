@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeeCard = () => {
     return (
-        <div className="w-[30%] h-screen m-12">
+        <div className="w-[20%] m-12">
             <div className="border p-6 shadow-md">
                 <div className="mb-4">
                     <p className="text-gray-500 text-sm">APPLICATION FEE</p>

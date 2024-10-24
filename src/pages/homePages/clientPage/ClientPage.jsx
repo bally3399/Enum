@@ -64,14 +64,14 @@ const ClientPage = () => {
                         <div className={'pl-[65px] bg-white pt-6'}>
                             <h1 className={'font-bold'}>Program Benefits</h1>
                             <h4 className={'mt-4 mb-6'}>What you are expected to know after this course</h4>
-                            <p>• Understand forms of market imperfections and their implications for financial
-                                managers</p>
-                            <p>• Generate a valuation range for a project or a company</p>
-                            <p>• Apply option theories to solve corporate finance problems</p>
-                            <p>• Use Excel to conduct a simple DCF analysis, regression analysis and sensitivity
-                                analysis</p>
-                            <p>• Understand various forms of market imperfections and their implications for
-                                financial </p>
+                            <li>Understand forms of market imperfections and their implications for financial
+                                managers</li>
+                            <li>Generate a valuation range for a project or a company</li>
+                            <li>Apply option theories to solve corporate finance problems</li>
+                            <li>Use Excel to conduct a simple DCF analysis, regression analysis and sensitivity
+                                analysis</li>
+                            <li>Understand various forms of market imperfections and their implications for
+                                financial </li>
                         </div>
 
                         <div className={'pl-[65px] pt-6 bg-white'}>
@@ -260,9 +260,7 @@ const ClientPage = () => {
                                 </div>
 
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <FeeCard/>

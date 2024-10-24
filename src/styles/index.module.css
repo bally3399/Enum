@@ -31,7 +31,7 @@
     @apply text-[#52616B] font-semibold  justify-center items-center
 }
 .program{
-    @apply grid grid-cols-1 gap-1.5 md:grid-cols-3 gap-y-[40px] pl-36 justify-items-center;
+    @apply grid grid-cols-1 gap-1.5 md:grid-cols-3 gap-y-[40px] pl-36 bg-white justify-items-center;
 }
 .midNavbar{
     @apply flex justify-center items-center rounded-full border-0
