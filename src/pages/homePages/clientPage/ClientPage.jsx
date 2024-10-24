@@ -14,6 +14,7 @@ import clock from "../../../asset/clock.png";
 import plus from "../../../asset/plus.png"
 import PageInformation from "@/component/pageInfo/PageInformation";
 import FeeCard from "@/component/feeCard/FeeCard";
+import PartnerCarousel from "@/component/partnerCarousel/PartnerCarousel";
 
 const ClientPage = () => {
     const [isOpen, setOpen] = useState(false)
@@ -22,21 +23,7 @@ const ClientPage = () => {
         <div>
             <Navbar/>
             <PageInformation/>
-            <div >
-                <div className="flex shadow-md w-full text-black items-center bg-white pl-[45px] justify-evenly">
-                    <span>Partners:</span>
-                    <ArrowBackIosIcon className="mx-2"/>
-                    <Image src={henleyLogo} alt={'image'}/>
-                    <span>Henley Business School</span>
-                    <Image src={henleyLogo} alt={'image'}/>
-                    <span>Henley Business School</span>
-                    <Image src={henleyLogo} alt={'image'}/>
-                    <span>Henley Business School</span>
-                    <Image src={henleyLogo} alt={'image'}/>
-                    <span>Henley Business School</span>
-                    <ArrowForwardIosIcon className="mx-2"/>
-                </div>
-            </div>
+            <PartnerCarousel/>
             <div className={'flex pt-6 bg-white'}>
                 <div className={'w-[70%] border-r-4'}>
                     <div className='flex gap-12 bg-white pb-6 pt-6 items-center shadow-md pl-[65px]'>
