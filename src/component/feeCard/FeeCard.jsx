@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const FeeCard = () => {
     return (
@@ -16,14 +17,14 @@ const FeeCard = () => {
                         className="text-gray-500 line-through ml-2">₦1,200,000.00</span></p>
                 </div>
 
-                <div className="mb-6">
+                <Link className="mb-6" href={'/appFee'}>
                     <button
                         className="bg-blue-700 text-white w-full py-3 rounded-md hover:bg-blue-600">Apply
                         Now
                     </button>
                     <button className="text-blue-700 mt-2 w-full text-sm">View Application Process
                     </button>
-                </div>
+                </Link>
 
                 <div className="text-sm text-gray-500 mb-6">
                     <p> 2 Modules</p>

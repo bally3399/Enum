@@ -5,6 +5,7 @@ import image1 from "../../../asset/image1.png"
 import payStackLogo from "../../../asset/paystackImg.png"
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import LockIcon from '@mui/icons-material/Lock';
+import Link from "next/link";
 
 const PaymentPage =() =>{
     return(
@@ -88,9 +89,11 @@ const PaymentPage =() =>{
                         Enum is required by law to collect applicable transaction taxes.
                     </p>
 
-                    <button className="bg-blue-600 text-white py-3 w-full rounded-md hover:bg-blue-700">
-                        Make Payment
-                    </button>
+                    <Link href={''}>
+                        <button className="bg-blue-600 text-white py-3 w-full rounded-md hover:bg-blue-700">
+                            Make Payment
+                        </button>
+                    </Link>
 
                     <p className="text-xs text-gray-500 mt-4">
                         By completing your purchase you agree to these <span
