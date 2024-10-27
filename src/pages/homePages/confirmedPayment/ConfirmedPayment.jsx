@@ -1,10 +1,10 @@
+import Link from "next/link";
 import Navbar from "@/component/navbar/Navbar";
 import Image from "next/image";
-import SuccessIcon from "../../../asset/SuccessIcon.png"
-import Link from "next/link";
-import PaymentImage from "@/asset/SuccessIcon.png";
-const PaymentConfirmed = () => {
-    return(
+import PaymentImage  from "../../../asset/SuccessIcon.png";
+
+const ConfirmedPayment = () => {
+    return (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center">
             <Navbar />
 
@@ -17,16 +17,17 @@ const PaymentConfirmed = () => {
                 <p className="text-gray-600 text-center mt-2">
                     Your payment has been confirmed, please check your email
                     <br />
-                    for the Assessment link or click the button below.
+                    for the cohort link or click the button below.
                 </p>
 
                 <Link href="/workspace">
-                    <button className="bg-[#008eef] text-white p-4 rounded-md hover:bg-blue-700">
-                        Proceed to Assessment
+                    <button className="bg-[#008eef] text-white p-3 rounded-md hover:bg-green-400">
+                        Proceed to Workspace
                     </button>
                 </Link>
             </div>
         </div>
-    )
-}
-export default PaymentConfirmed
+    );
+};
+
+export default ConfirmedPayment;
