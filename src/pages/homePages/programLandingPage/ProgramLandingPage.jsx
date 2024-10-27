@@ -26,7 +26,7 @@ const ProgramLandingPage = () => {
                         <Image className="w-[150px] sm:w-[200px]" src={image1} alt="image" />
                         <div>
                             <h1 className="pt-4 sm:pt-6 font-bold text-lg sm:text-xl">
-                                Business Leadership - Application Fee
+                                Business Leadership - Program Fee
                                 <span className="block font-semibold text-sm sm:text-base">
                   by Semicolon Africa
                 </span>

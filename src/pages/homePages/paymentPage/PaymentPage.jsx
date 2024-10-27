@@ -69,7 +69,7 @@ const PaymentPage = () => {
                 <div className="p-6 border-t-4 sm:border-t-0 sm:border-r-4 bg-blue-50 w-full sm:w-[30%] m-4 rounded-lg shadow-md">
                     <h2 className="text-lg font-bold mb-2">Summary</h2>
                     <p className="text-blue-700 font-medium mb-4">
-                        Business Leadership Program Fee
+                        Business Leadership Application Fee
                     </p>
                     <div className="text-gray-600 text-sm mb-2">
                         <div className="flex justify-between">
