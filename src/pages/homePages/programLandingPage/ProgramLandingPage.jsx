@@ -7,7 +7,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import LockIcon from "@mui/icons-material/Lock";
 import Link from "next/link";
 
-const PaymentPage = () => {
+const ProgramLandingPage = () => {
     return (
         <div className="bg-white">
             <Navbar className="pb-6" />
@@ -32,7 +32,7 @@ const PaymentPage = () => {
                 </span>
                             </h1>
                         </div>
-                        <p className="text-[#1095f0] pt-4 sm:pt-6 text-lg">₦10,000</p>
+                        <p className="text-[#1095f0] pt-4 sm:pt-6 text-lg">₦840,000</p>
                     </div>
                     <div className="p-4 pl-6 sm:pl-28 pt-6">
                         <div className="mb-4">
@@ -74,16 +74,16 @@ const PaymentPage = () => {
                     <div className="text-gray-600 text-sm mb-2">
                         <div className="flex justify-between">
                             <span>Subtotal</span>
-                            <span>₦12,000</span>
+                            <span>₦1,200,000</span>
                         </div>
                         <div className="flex justify-between">
                             <span>Coupon discounts</span>
-                            <span>-₦2,000</span>
+                            <span>-₦360,000</span>
                         </div>
                     </div>
                     <div className="flex justify-between items-center text-lg font-bold text-blue-700 mb-4">
                         <span>Total</span>
-                        <span>₦10,000</span>
+                        <span>₦840,000</span>
                     </div>
                     <p className="text-xs text-gray-500 mb-4">
                         Enum is required by law to collect applicable transaction taxes.
@@ -104,4 +104,4 @@ const PaymentPage = () => {
         </div>
     );
 };
-export default PaymentPage;
+export default ProgramLandingPage;
