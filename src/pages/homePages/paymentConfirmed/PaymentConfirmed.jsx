@@ -1,6 +1,7 @@
 import Navbar from "@/component/navbar/Navbar";
 import Image from "next/image";
 import SuccessIcon from "../../../asset/SuccessIcon.png"
+import Link from "next/link";
 const PaymentConfirmed = () => {
     return(
         <div >
@@ -16,9 +17,11 @@ const PaymentConfirmed = () => {
                 </h1>
             </div>
             <div className={'flex align-middle justify-center items-center pt-4'}>
-                <button className="bg-blue-600 text-white p-4 rounded-md hover:bg-blue-700">
-                    Proceed to Assessment
-                </button>
+                <Link href={'/assessmentClicked'}>
+                    <button className="bg-blue-600 text-white p-4 rounded-md hover:bg-blue-700">
+                        Proceed to Assessment
+                    </button>
+                </Link>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 .navbar{
-    @apply px-[20px] h-[70px] w-full flex justify-between inset-0 m-auto bg-white
+    @apply px-[20px] h-[70px] w-full flex justify-between inset-0 m-auto bg-white border-b-2
 }
 .navbarLogo{
     @apply flex flex-row gap-2 h-[40px] justify-center items-center inset-0 my-auto

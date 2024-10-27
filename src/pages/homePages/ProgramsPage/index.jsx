@@ -1,4 +1,4 @@
-import { Programs } from "@/pages/homePages/programsPage/data";
+import { Programs } from "@/data";
 import styles from '@/styles/index.module.css';
 import Image from 'next/image';
 import Link from "next/link";
@@ -13,11 +13,7 @@ const ProgramsPages = () => {
                         <div className={'absolute w-full mt-[-40px]'}>
                             <Image src={Logo} alt={`${title} logo`} width={'2px'} height={'2px'} />
                             <h2>{title}</h2>
-                            {typeof price === 'string' ? (
-                                <p>{price}</p>
-                            ) : (
-                                <Image src={price} alt="price image" width={100} height={100} />
-                            )}
+                           <p>{price}</p>
                         </div>
                     </Link>
                 ))

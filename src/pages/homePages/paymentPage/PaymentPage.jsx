@@ -89,7 +89,7 @@ const PaymentPage =() =>{
                         Enum is required by law to collect applicable transaction taxes.
                     </p>
 
-                    <Link href={''}>
+                    <Link href={'/confirmed'}>
                         <button className="bg-blue-600 text-white py-3 w-full rounded-md hover:bg-blue-700">
                             Make Payment
                         </button>

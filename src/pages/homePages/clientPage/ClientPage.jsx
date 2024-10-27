@@ -8,13 +8,17 @@ import profilePic from "../../../asset/profilePics.png"
 import video from "../../../asset/video.png"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import {useState} from "react";
+import React, {useState} from "react";
 import minus from "../../../asset/minus.png";
 import clock from "../../../asset/clock.png";
 import plus from "../../../asset/plus.png"
 import PageInformation from "@/component/pageInfo/PageInformation";
 import FeeCard from "@/component/feeCard/FeeCard";
 import PartnerCarousel from "@/component/partnerCarousel/PartnerCarousel";
+import {HiArrowLeft} from "react-icons/hi";
+import semicolonLogo from "@/asset/semicolonLogo.png";
+import heroImage from "@/asset/image1.png";
+import Link from "next/link";
 
 const ClientPage = () => {
     const [isOpen, setOpen] = useState(false)
@@ -22,15 +26,63 @@ const ClientPage = () => {
     return (
         <div>
             <Navbar/>
-            <PageInformation/>
-            <PartnerCarousel/>
+            <div className="flex">
+                <div className="w-[60%] bg-blue-800 text-white">
+                    <div className="flex text-white items-center pb-2 pt-5 ml-[65px] text-sm">
+                        <span>Programs</span>
+                        <ArrowForwardIosIcon className="mx-2"/>
+                        <span>All Programs</span>
+                        <ArrowForwardIosIcon className="mx-2"/>
+                        <span>Business Leadership</span>
+                        <ArrowForwardIosIcon className="mx-2"/>
+                        <span>Program Information</span>
+                    </div>
+
+                    <div className="ml-[65px] pt-4">
+                        <button className="flex items-center text-white hover:underline">
+                            <HiArrowLeft className="mr-2"/> Back
+                        </button>
+                    </div>
+
+                    <h1 className="ml-[65px] font-semibold text-4xl pt-8">Business Leadership</h1>
+
+                    <div className="ml-[65px] flex gap-5 mt-8 items-center">
+                        <Image src={semicolonLogo} alt="Semicolon Logo" className="w-12 h-12"/>
+                        <div>
+                            <p className="text-sm">OFFERED BY</p>
+                            <p className="text-lg">Semicolon Africa</p>
+                        </div>
+                    </div>
+
+                    <div className="ml-[65px] flex items-center gap-4 mt-12">
+                        <button
+                            className="bg-white text-blue-800 px-4 mb-2 py-2 rounded hover:bg-gray-100 flex items-center">
+                            Apply Now
+                        </button>
+                        <p className="text-sm mt-1">5,000 students already enrolled</p>
+                    </div>
+                </div>
+
+                <Image src={heroImage} alt="Hero Image" className="w-[40%] h-auto object-cover"/>
+            </div>
+            <div className="flex shadow-md w-full text-black items-center pt-6 bg-white pl-14 justify-evenly">
+                <span>Partners:</span>
+                <ArrowBackIosIcon className="mx-2"/>
+                {[...Array(5)].map((_, index) => (
+                    <div key={index} className="flex items-center">
+                        <Image src={henleyLogo} alt='Henley Business School Logo'/>
+                        <span>Henley Business School</span>
+                    </div>
+                ))}
+                <ArrowForwardIosIcon className="mx-2"/>
+            </div>
             <div className={'flex pt-6 bg-white'}>
                 <div className={'w-[70%] border-r-4'}>
                     <div className='flex gap-12 bg-white pb-6 pt-6 items-center shadow-md pl-[65px]'>
-                        <div className='cursor-pointer text-black font-black'>About</div>
-                        <div className='cursor-pointer text-black'>Program Goals</div>
-                        <div className='cursor-pointer text-black'>Program Benefits</div>
-                        <div className='cursor-pointer text-black'>Courses</div>
+                        <Link className='cursor-pointer text-black font-black' href={'/about'}>About</Link>
+                        <Link className='cursor-pointer text-black' href={'/program'}>Program Goals</Link>
+                        <Link className='cursor-pointer text-black' href={'/program'}>Program Benefits</Link>
+                        <Link className='cursor-pointer text-black' href={'/course'}>Courses</Link>
                     </div>
                     <div>
                         <div className={'pl-[65px] bg-white'}>
@@ -212,7 +264,7 @@ const ClientPage = () => {
                                             <span
                                                 className="block text-gray-500 text-sm">Introduction to Accounting</span>
                                         </h1>
-                                        <button className="border border-gray-400 rounded-full p-2">
+                                        <button className="border border-gray-400 p-2">
                                             <Image src={plus} alt="plus"/>
                                         </button>
                                     </div>
@@ -222,7 +274,7 @@ const ClientPage = () => {
                                             SESSION 3
                                             <span className="block text-gray-500 text-sm">Prezi Presentation Tool</span>
                                         </h1>
-                                        <button className="border border-gray-400 rounded-full p-2">
+                                        <button className="border border-gray-400 p-2">
                                             <Image src={plus} alt="plus"/>
                                         </button>
                                     </div>
@@ -233,7 +285,7 @@ const ClientPage = () => {
                                             <span
                                                 className="block text-gray-500 text-sm">Introduction to Business Law</span>
                                         </h1>
-                                        <button className="border border-gray-400 rounded-full p-2">
+                                        <button className="border border-gray-400 p-2">
                                             <Image src={plus} alt="plus"/>
                                         </button>
                                     </div>
@@ -243,7 +295,7 @@ const ClientPage = () => {
                                             SESSION 5
                                             <span className="block text-gray-500 text-sm">Excel Tool</span>
                                         </h1>
-                                        <button className="border border-gray-400 rounded-full p-2">
+                                        <button className="border border-gray-400 p-2">
                                             <Image src={plus} alt="plus"/>
                                         </button>
                                     </div>
@@ -253,7 +305,7 @@ const ClientPage = () => {
                                             SESSION 6
                                             <span className="block text-gray-500 text-sm">Power BI</span>
                                         </h1>
-                                        <button className="border border-gray-400 rounded-full p-2">
+                                        <button className="border border-gray-400 p-2">
                                             <Image src={plus} alt="plus"/>
                                         </button>
                                     </div>
