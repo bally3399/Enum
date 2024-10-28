@@ -15,6 +15,7 @@ export default function Navbar({}){
     const getNumberOfNotification =0;
     const username='Oyindamola';
     const [isOpen, setOpen] = useState(false)
+
     return (
         <div className={styles.navbar}>
             <div className={styles.navbarLogo}>
@@ -23,16 +24,18 @@ export default function Navbar({}){
                     <p>enum</p>
                 </div>
             </div>
-            <ul className={styles.navbarList}>
-                <div className='relative flex items-center justify-center'>
-                    <SearchIcon className="absolute left-3 text-gray-500" />
+            <div className={styles.navbarList}>
+                <div
+                    className="flex items-center justify-center border-2 border-gray-300 rounded-lg hover:border-gray-500 focus-within:border-gray-500 px-2 w-full md:w-[500px]">
+                    <SearchIcon className="text-gray-500 mr-2"/>
                     <input
                         type="text"
-                        className="p-9 pl-12 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600 w-full md:w-[500px]"
+                        className="outline-none bg-transparent w-full px-2 py-1 rounded-lg placeholder-gray-500"
                         placeholder="Search"
                     />
                 </div>
-            </ul>
+            </div>
+
 
             <div className={styles.navbarRightSide}>
                 <Badge badgeContent={getNumberOfNotification}>

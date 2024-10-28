@@ -7,13 +7,15 @@
 .navbarLogo :last-child{
     @apply hidden md:flex h-[20px] justify-center items-center
 }
-.navbarList{
-    @apply hidden md:flex  gap-5 md:justify-center md:items-center h-full;
+.navbarList {
+    @apply hidden md:flex gap-5 justify-center items-center h-full;
 }
 
-.navbarList :hover {
-    @apply border-[2px] border-[#070707];
+.navbarList input:focus {
+    outline: none;
+    border-color: #4B5563;
 }
+
 .navbarRightSide{
     @apply flex justify-center items-center
 }

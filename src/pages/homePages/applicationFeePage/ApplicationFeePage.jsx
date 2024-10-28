@@ -9,7 +9,7 @@ const ApplicationFeePage =()=>{
             <Navbar/>
             <PageInformation/>
             <PartnerCarousel/>
-            <div className={'flex pt-6 bg-white'}>
+            <div className={'flex pt-6 bg-white '}>
                 <div className={'w-[70%] border-r-4 '}>
                     <h1 className={'font-bold pl-32 pb-6'}>
                         Application Process
