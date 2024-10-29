@@ -4,6 +4,7 @@ import PageInformation from "@/component/pageInfo/PageInformation";
 import PartnerCarousel from "@/component/partnerCarousel/PartnerCarousel";
 import Instructions from "@/component/instructions/Instructions";
 import { useState } from "react";
+import Link from "next/link";
 
 const AssessmentClicked = () => {
     const [isChecked, setIsChecked] = useState(false);
@@ -33,14 +34,14 @@ const AssessmentClicked = () => {
                             I have read and understood all the instructions above
                         </label>
                     </div>
-                    <button
+                    <Link
                         className={`py-2 px-4 bg-gray-300 text-white rounded-md ${
                             isChecked ? "bg-blue-500 cursor-pointer" : "cursor-not-allowed"
                         }`}
                         disabled={!isChecked}
-                    >
+                    href={'/assessmentInstruction'}>
                         Begin Assessment
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

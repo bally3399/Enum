@@ -7,11 +7,16 @@ import Button from "@/component/button/Button";
 import colouredShapes from "../../../asset/shapes.png"
 import {HiArrowLeft} from "react-icons/hi";
 import rectangle from "../../../asset/Rectangle.png"
+import {Assessment} from "@mui/icons-material";
+import AssessmentNavbar from "@/component/assessmentNavbar/AssessmentNavbar";
+import Link from "next/link";
 
 
 const AssessmentPage =()=>{
     return(
         <div>
+            <AssessmentNavbar/>
+            <Assessment/>
             <div className={'mx-[200px] mb-10'}>
                 <div className="pl-[45px] pt-4">
                     <button className="flex items-center text-black hover:underline">
@@ -45,13 +50,13 @@ const AssessmentPage =()=>{
                         <div className={'ml-10 mt-[45px] w-full text-black'}>
                             <div className='flex p-3 pl-0 text-black rounded-lg border-2 mb-3'>
                                 <Image src={letterA} alt={'letterA'} className={'w-[24px] ml-2 h-[24px] text-black'}/>
-                                <Button word={'4 '}
+                                <Button word={'4'}
                                         className='w-[32px ] h-[18px]font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
                             <div className='flex p-2   pl-0 text-black rounded-lg border-2 mb-3'>
                                 <Image src={letterB} alt={'letterA'} className={'w-[24px] ml-2 h-[24px] text-black'}/>
-                                <Button word={'6 '}
+                                <Button word={'6'}
                                         className='w-[32px ] h-h-[18px] font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
@@ -64,14 +69,14 @@ const AssessmentPage =()=>{
                             <div className='flex gap-3  p-2 pl-0 text-black rounded-lg border-2 mb-3'>
                                 <Image src={letterD} alt={'letterD'} className={'w-[24px] h-[24px] ml-2 text-black'}/>
                                 <Button word={'8'}
-                                        className='w-[32px ] h-[18px] font-[400] text-[14px] leading-[24px]'/>
+                                        className='w-[32px] h-[18px] font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
-                            <div
-                                className='flex gap-2  p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]'>
-                                <Button word={'Next '}
-                                        className='w-[32px ] h-[24px] font-[400] text-[14px] leading-[24px]'/>
-                            </div>
+                            <Link
+                                className='flex gap-2  p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]' href={'/programLandingPage'}>
+                                <Button word={'Next'}
+                                        className='w-[32px ] h-[24px] font-[400] text-[14px] leading-[24px]' />
+                            </Link>
 
                         </div>
                     </div>

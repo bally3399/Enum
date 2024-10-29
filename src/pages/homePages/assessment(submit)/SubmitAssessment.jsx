@@ -11,6 +11,7 @@ import timeImage from '../../../asset/clock.png';
 import {HiArrowLeft} from "react-icons/hi";
 import {Icon} from "@mui/material";
 import AssessmentNavbar from "@/component/assessmentNavbar/AssessmentNavbar";
+import Link from "next/link";
 
 const SubmitAssessment = () =>{
     return(
@@ -43,7 +44,6 @@ const SubmitAssessment = () =>{
                     </div>
                 </div>
 
-                {/*blue line*/}
                 <p className={'border border-blue-500  mb-5'}></p>
 
 
@@ -91,11 +91,11 @@ const SubmitAssessment = () =>{
                                     <Button word={'Previous '}
                                             className='w-[32px] text-blue-500 h-[24px] font-[400] text-[14px] leading-[24px]'/>
                                 </div>
-                                <div
-                                    className='flex gap-2 w-[50%] p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]'>
+                                <Link
+                                    className='flex gap-2 w-[50%] p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]' href={'/submitAssessment'}>
                                     <Button word={'Next '}
                                             className='w-[32px ] h-[24px] font-[400] text-[14px] leading-[24px]'/>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

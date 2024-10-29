@@ -2,6 +2,7 @@ import Navbar from "@/component/navbar/Navbar";
 import PageInformation from "@/component/pageInfo/PageInformation";
 import PartnerCarousel from "@/component/partnerCarousel/PartnerCarousel";
 import Instructions from "@/component/instructions/Instructions";
+import Link from "next/link";
 
 const AssessmentInstructions =() =>{
     return (
@@ -22,9 +23,9 @@ const AssessmentInstructions =() =>{
                         <p className='mt-2 font-bold text-[12px]'>I have read and understood all the instructions
                             above</p>
                     </div>
-                    <button className="bg-[#008EEF] text-white p-3 rounded-md hover:bg-[#008EEF]">
+                    <Link className="bg-[#008EEF] text-white p-3 rounded-md hover:bg-[#008EEF]" href={'/assessmentPage'}>
                         Begin Assessment
-                    </button>
+                    </Link>
                 </div>
             </div>
 

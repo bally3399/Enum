@@ -1,6 +1,5 @@
 import Navbar from "@/component/navbar/Navbar";
 import Image from "next/image";
-import SuccessIcon from "../../../asset/SuccessIcon.png"
 import Link from "next/link";
 import PaymentImage from "@/asset/SuccessIcon.png";
 const PaymentConfirmed = () => {
@@ -20,7 +19,7 @@ const PaymentConfirmed = () => {
                     for the Assessment link or click the button below.
                 </p>
 
-                <Link href="/workspace">
+                <Link href="/assessmentClicked">
                     <button className="bg-[#008eef] text-white p-4 rounded-md hover:bg-blue-700">
                         Proceed to Assessment
                     </button>

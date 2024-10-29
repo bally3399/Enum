@@ -7,6 +7,7 @@ import Button from "@/component/button/Button";
 import letterB from "@/asset/letterB.png";
 import letterC from "@/asset/letterC.png";
 import letterD from "@/asset/letterD.png";
+import Link from "next/link";
 
 const Assessment = () =>{
     return (
@@ -30,9 +31,8 @@ const Assessment = () =>{
                             <p className={'text-[#6E7EA8] h-[28px] w-[151px] text-[14px] font-[400] leading-[28px]'}>4
                                 Questions · 5 mins</p>
                         </div>
-                        {/*<p className={'text-[12px] font-[500] leading-[15.62px] tracking-[10%]'}>TOTAL UNANSWERED: 4</p>*/}
                     </div>
-                    <div className={'flex '}>
+                    <div className={'flex'}>
                         <div className={'text-black w-[440px] h-[380px]'}>
                             <p className={'text-black w-[440px] h-[20px] my-3'}>How many sides does the yellow polygon
                                 have?</p>
@@ -43,14 +43,14 @@ const Assessment = () =>{
                         <div className={'ml-10 mt-[45px] w-full text-black'}>
                             <div className='flex p-3 pl-0 text-black rounded-lg border-2 mb-3'>
                                 <Image src={letterA} alt={'letterA'} className={'w-[24px] ml-2 h-[24px] text-black'}/>
-                                <Button word={'4 '}
+                                <Button word={'4'}
                                         className='w-[32px ] h-[18px]font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
                             <div className='flex p-2   pl-0 text-black rounded-lg border-2 mb-3'>
                                 <Image src={letterB} alt={'letterA'} className={'w-[24px] ml-2 h-[24px] text-black'}/>
-                                <Button word={'6 '}
-                                        className='w-[32px ] h-h-[18px] font-[400] text-[14px] leading-[24px]'/>
+                                <Button word={'6'}
+                                         className='w-[32px ] h-h-[18px] font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
                             <div className='flex p-2   pl-0 text-black rounded-lg border-2 mb-3'>
@@ -65,16 +65,15 @@ const Assessment = () =>{
                                         className='w-[32px ] h-[18px] font-[400] text-[14px] leading-[24px]'/>
                             </div>
 
-                            <div
-                                className='flex gap-2  p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]'>
-                                <Button word={'Next '}
+                            <Link
+                                className='flex gap-2  p-2 pl-0 text-white bg-[#008EEF] justify-center rounded-lg border-2 mt-[45px]' href={'/submitted'}>
+                                <Button word={'Next'}
                                         className='w-[32px ] h-[24px] font-[400] text-[14px] leading-[24px]'/>
-                            </div>
+                            </Link>
 
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )
